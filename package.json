@@ -1,0 +1,21 @@
+{
+  "name": "simple-react-webpack-boilerplate",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "webpack --watch"
+  },
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-es6-promise": "^1.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-strict-mode": "^6.11.3",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.5.0",
+    "es6-promise": "^3.2.1",
+    "react": "^15.1.0",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.1.0",
+    "webpack": "^1.13.2"
+  }
+}
