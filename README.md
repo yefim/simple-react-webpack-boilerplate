@@ -11,7 +11,7 @@ It doesn't get much simpler than this. Spin up your front-end environment with e
 
 * `open index.html`
 
-## What's Inside
+## What's inside
 
 ````
 $ tree --charset unicode
@@ -25,3 +25,9 @@ $ tree --charset unicode
 |   `-- welcome-message.js
 `-- webpack.config.js
 ````
+
+Yep, that's it.
+
+## Contributors
+
+* [Yefim Vedernikoff](https://twitter.com/yefim)
