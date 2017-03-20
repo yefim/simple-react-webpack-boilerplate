@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 const WelcomeMessage = React.createClass({
+  propTypes: {
+    message: PropTypes.string.isRequired
+  },
+
   render() {
+    const { message } = this.props;
+
     return (
-      <h1>Hello simple React webpack boilerplate</h1>
+      <h1>{message}</h1>
     );
   }
 });
