@@ -1,24 +1,20 @@
 module.exports = {
   context: __dirname,
-  entry: {
-    app: './scripts/index.js'
-  },
+  entry: './scripts/index.js',
   output: {
-    path: './build',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: './build'
   },
   resolve: {
-    root: __dirname,
-    modulesDirectories: ['scripts', 'node_modules'],
-    extensions: ['', '.js']
+    modules: ['scripts', 'node_modules']
   },
   module: {
-    loaders: [
+    rules: [
       {
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /node_modules/,
         test: /\.js$/,
-        query: {
+        options: {
           presets: ['es2015', 'react'],
           cacheDirectory: true,
           plugins: ['transform-strict-mode', 'transform-object-rest-spread', 'es6-promise']
