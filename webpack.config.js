@@ -20,7 +20,7 @@ module.exports = {
             'react'
           ],
           cacheDirectory: true,
-          plugins: ['transform-strict-mode', 'transform-object-rest-spread', 'es6-promise']
+          plugins: ['transform-strict-mode', 'transform-object-rest-spread']
         },
       }
     ]
