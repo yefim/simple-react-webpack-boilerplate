@@ -1,9 +1,11 @@
+var path = require('path');
+
 module.exports = {
   context: __dirname,
   entry: './scripts/index.js',
   output: {
     filename: 'bundle.js',
-    path: './build'
+    path: path.join(__dirname, 'build')
   },
   resolve: {
     modules: ['scripts', 'node_modules']
