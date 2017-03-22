@@ -15,7 +15,10 @@ module.exports = {
         exclude: /node_modules/,
         test: /\.js$/,
         options: {
-          presets: ['es2015', 'react'],
+          presets: [
+            ['env', {modules: false, targets: {browsers: ['last 2 versions']}}],
+            'react'
+          ],
           cacheDirectory: true,
           plugins: ['transform-strict-mode', 'transform-object-rest-spread', 'es6-promise']
         },
