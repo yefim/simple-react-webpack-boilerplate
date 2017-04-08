@@ -1,10 +1,7 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const WelcomeMessage = React.createClass({
-  propTypes: {
-    message: PropTypes.string.isRequired
-  },
-
+class WelcomeMessage extends React.Component {
   render() {
     const { message } = this.props;
 
@@ -12,6 +9,11 @@ const WelcomeMessage = React.createClass({
       <h1>{message}</h1>
     );
   }
-});
+}
+
+WelcomeMessage.propTypes = {
+  message: PropTypes.string.isRequired
+};
+
 
 export default WelcomeMessage;
