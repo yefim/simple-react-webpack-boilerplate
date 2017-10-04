@@ -26,6 +26,7 @@ $ tree --charset unicode
 |-- package.json
 |-- scripts
 |   |-- index.js
+|   |-- input.js
 |   `-- welcome-message.js
 `-- webpack.config.js
 ````
