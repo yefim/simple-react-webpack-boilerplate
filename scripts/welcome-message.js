@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Input from './input';
+
 class WelcomeMessage extends React.Component {
   static propTypes = {
     message: PropTypes.string.isRequired
@@ -26,6 +28,7 @@ class WelcomeMessage extends React.Component {
             this.setState({clicks: clicks + 1});
           }}>Click me</button>
         <h2>{clicks} click{clicks === 1 ? '' : 's'}</h2>
+        <Input placeholder="Type here..." />
       </div>
     );
   }
