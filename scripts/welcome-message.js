@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class WelcomeMessage extends React.Component {
+  static propTypes = {
+    message: PropTypes.string.isRequired
+  };
+
   constructor() {
     super();
 
@@ -23,15 +27,10 @@ class WelcomeMessage extends React.Component {
               clicks: clicks + 1
             });
           }}>Click me</button>
-        <h2>{clicks} click{clicks == 1 ? '' : 's'}</h2>
+        <h2>{clicks} click{clicks === 1 ? '' : 's'}</h2>
       </div>
     );
   }
 }
-
-WelcomeMessage.propTypes = {
-  message: PropTypes.string.isRequired
-};
-
 
 export default WelcomeMessage;

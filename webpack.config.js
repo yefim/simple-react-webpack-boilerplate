@@ -22,7 +22,11 @@ module.exports = {
             'react'
           ],
           cacheDirectory: true,
-          plugins: ['transform-strict-mode', 'transform-object-rest-spread']
+          plugins: [
+            'transform-strict-mode',
+            'transform-object-rest-spread',
+            'transform-class-properties'
+          ]
         },
       }
     ]
