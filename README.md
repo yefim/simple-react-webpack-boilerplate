@@ -24,6 +24,7 @@ $ tree --charset unicode
 |-- README.md
 |-- index.html
 |-- package.json
+|-- package-lock.json
 |-- scripts
 |   |-- index.js
 |   |-- input.js
