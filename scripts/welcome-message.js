@@ -11,9 +11,7 @@ class WelcomeMessage extends React.Component {
   constructor() {
     super();
 
-    this.state = {
-      clicks: 0
-    };
+    this.state = {clicks: 0};
   }
 
   render() {
@@ -25,7 +23,9 @@ class WelcomeMessage extends React.Component {
         <h1>{message}</h1>
         <button
           onClick={() => {
-            this.setState({clicks: clicks + 1});
+            this.setState(({clicks}) => {
+              return {clicks: clicks + 1};
+            });
           }}>Click me</button>
         <h2>{clicks} click{clicks === 1 ? '' : 's'}</h2>
         <Input placeholder="Type here..." />

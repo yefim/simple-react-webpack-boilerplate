@@ -22,8 +22,9 @@ class Input extends React.Component {
       <input
         placeholder={placeholder}
         onChange={(e) => {
-          this.setState({
-            value: e.target.value
+          const val = e.target.value;
+          this.setState(() => {
+            return {value: val};
           });
         }}
         value={value}
