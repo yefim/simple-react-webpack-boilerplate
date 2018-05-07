@@ -1,18 +1,33 @@
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  context: __dirname,
-  entry: './scripts/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[chunkhash].js',
     path: path.join(__dirname, 'build')
   },
   resolve: {
     modules: ['scripts', 'node_modules']
   },
+  plugins: [
+    new CleanWebpackPlugin(['build']),
+    new HtmlWebPackPlugin({template: 'src/index.html'}),
+    new webpack.HashedModuleIdsPlugin()
+  ],
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {minimize: true}
+          }
+        ]
+      },
       {
         loader: 'babel-loader',
         exclude: /node_modules/,

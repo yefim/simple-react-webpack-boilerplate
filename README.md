@@ -11,7 +11,7 @@ Kept up to date by yours truly so you can always use the latest and greatest.
 
 * `npm start`
 
-* `open index.html`
+* `open build/index.html`
 
 ## What's inside
 
@@ -19,11 +19,11 @@ Kept up to date by yours truly so you can always use the latest and greatest.
 $ tree --charset unicode
 .
 |-- LICENSE
-|-- README.md
-|-- index.html
 |-- package.json
 |-- package-lock.json
-|-- scripts
+|-- README.md
+|-- src
+|   |-- index.html
 |   |-- index.js
 |   |-- input.js
 |   `-- welcome-message.js
