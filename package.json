@@ -2,7 +2,7 @@
   "name": "simple-react-webpack-boilerplate",
   "version": "0.0.1",
   "scripts": {
-    "start": "webpack --watch"
+    "start": "webpack-dev-server --mode development"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -18,7 +18,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "webpack": "^4.8.0"
+    "webpack": "^4.8.0",
+    "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
     "webpack-cli": "^2.1.3"

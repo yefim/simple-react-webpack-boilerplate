@@ -4,7 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
   output: {
     filename: '[name].[chunkhash].js',
     path: path.join(__dirname, 'build')

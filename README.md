@@ -11,7 +11,7 @@ Kept up to date by yours truly so you can always use the latest and greatest.
 
 * `npm start`
 
-* `open build/index.html`
+* `open http://localhost:8080/`
 
 ## What's inside
 
