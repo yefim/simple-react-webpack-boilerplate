@@ -23,7 +23,10 @@ class App extends React.Component {
             });
           }}>Click me</button>
         <h2>{clicks} click{clicks === 1 ? '' : 's'}</h2>
-        <Input placeholder="Type here..." />
+        <label>
+          <p>Type here</p>
+          <Input placeholder="Type here..." />
+        </label>
       </div>
     );
   }
